@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assem ElQersh - AI & Machine Learning Engineer | Modern Portfolio showcasing innovative AI projects and cutting-edge solutions">
+    <meta name="keywords" content="AI Engineer, Machine Learning, Deep Learning, Computer Vision, Data Science, Portfolio">
+    <meta name="author" content="Assem ElQersh">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://assem-elqersh.github.io/">
+    <meta property="og:title" content="Assem ElQersh - AI & ML Engineer">
+    <meta property="og:description" content="Innovative AI & Machine Learning Engineer crafting intelligent solutions for tomorrow's challenges">
+    <meta property="og:image" content="assets/images/preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://assem-elqersh.github.io/">
+    <meta property="twitter:title" content="Assem ElQersh - AI & ML Engineer">
+    <meta property="twitter:description" content="Innovative AI & Machine Learning Engineer crafting intelligent solutions for tomorrow's challenges">
+    <meta property="twitter:image" content="assets/images/preview.png">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/images/profile.jpg" as="image">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <title>Assem ElQersh | AI & ML Engineer</title>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <p class="loader-text">Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">AE</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-cta" onclick="downloadCV()">Download CV</button>
+                </li>
+            </ul>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <div class="floating-elements">
+                    <div class="floating-element" data-speed="2"></div>
+                    <div class="floating-element" data-speed="4"></div>
+                    <div class="floating-element" data-speed="3"></div>
+                    <div class="floating-element" data-speed="5"></div>
+                    <div class="floating-element" data-speed="1"></div>
+                </div>
+            </div>
+            
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="hero-greeting">Hello, I'm</span>
+                            <span class="hero-name" data-text="Assem ElQersh">Assem ElQersh</span>
+                            <span class="hero-role">AI & Machine Learning Engineer</span>
+                        </h1>
+                        
+                        <p class="hero-description">
+                            Crafting intelligent solutions that bridge the gap between imagination and reality. 
+                            I specialize in developing cutting-edge AI systems that solve complex real-world challenges.
+                        </p>
+                        
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">
+                                <span>View My Work</span>
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                </svg>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <span>Get In Touch</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual">
+                        <div class="hero-image-container">
+                            <div class="hero-image-frame">
+                                <img src="assets/images/profile.jpg" alt="Assem ElQersh" class="hero-image">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="hero-stats">
+                                <div class="stat">
+                                    <span class="stat-number" data-target="40">0</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number" data-target="2">0</span>
+                                    <span class="stat-label">Years Experience</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number" data-target="7">0</span>
+                                    <span class="stat-label">Happy Clients</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <div class="scroll-dot"></div>
+                    <span class="scroll-text">Scroll to explore</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Passionate about creating intelligent solutions</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="about-intro">
+                            <h3>Innovating at the intersection of AI and real-world applications</h3>
+                            <p>
+                                As a Computer Engineer specializing in AI & ML, I transform complex challenges into elegant, 
+                                intelligent solutions. My passion lies in developing systems that not only demonstrate 
+                                technical excellence but also create meaningful impact in people's lives.
+                            </p>
+                        </div>
+                        
+                        <div class="about-details">
+                            <div class="detail-group">
+                                <h4>What I Do</h4>
+                                <ul class="detail-list">
+                                    <li>
+                                        <span class="detail-icon">🧠</span>
+                                        <span>Machine Learning & Deep Learning</span>
+                                    </li>
+                                    <li>
+                                        <span class="detail-icon">👁️</span>
+                                        <span>Computer Vision & Image Processing</span>
+                                    </li>
+                                    <li>
+                                        <span class="detail-icon">🗣️</span>
+                                        <span>Natural Language Processing</span>
+                                    </li>
+                                    <li>
+                                        <span class="detail-icon">📊</span>
+                                        <span>Data Science & Analytics</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="detail-group">
+                                <h4>My Approach</h4>
+                                <p>
+                                    I believe in the power of technology to solve real problems. Every project I undertake 
+                                    is driven by the desire to create solutions that are not just technically sound, 
+                                    but also practical and impactful.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual">
+                        <div class="timeline">
+                            <div class="timeline-item" data-year="2020">
+                                <div class="timeline-content">
+                                    <h4>Started AI Journey</h4>
+                                    <p>Began exploring machine learning and computer vision</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-year="2022">
+                                <div class="timeline-content">
+                                    <h4>Deep Learning Specialization</h4>
+                                    <p>Focused on neural networks and advanced AI architectures</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item" data-year="2024">
+                                <div class="timeline-content">
+                                    <h4>Professional AI Engineer</h4>
+                                    <p>Leading innovative AI projects and solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <p class="section-subtitle">Technologies I work with</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="category-title">Programming Languages</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <img src="assets/images/python.svg" alt="Python" class="skill-icon">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <img src="assets/images/cpp.svg" alt="C++" class="skill-icon">
+                                <span class="skill-name">C++</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <img src="assets/images/c.svg" alt="C" class="skill-icon">
+                                <span class="skill-name">C</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="category-title">AI/ML Frameworks</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <img src="assets/images/tensorflow.svg" alt="TensorFlow" class="skill-icon">
+                                <span class="skill-name">TensorFlow</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <img src="assets/images/pytorch.svg" alt="PyTorch" class="skill-icon">
+                                <span class="skill-name">PyTorch</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <img src="assets/images/opencv.svg" alt="OpenCV" class="skill-icon">
+                                <span class="skill-name">OpenCV</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="92"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="category-title">Data Science</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <img src="assets/images/numpy.svg" alt="NumPy" class="skill-icon">
+                                <span class="skill-name">NumPy</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="93"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <img src="assets/images/pandas.svg" alt="Pandas" class="skill-icon">
+                                <span class="skill-name">Pandas</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="category-title">Tools & Others</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <img src="assets/images/git.svg" alt="Git" class="skill-icon">
+                                <span class="skill-name">Git</span>
+                                <div class="skill-level">
+                                    <div class="skill-bar" data-level="87"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Showcasing innovation through intelligent solutions</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project cards will be generated by JavaScript -->
+                </div>
+                
+                <div class="projects-cta">
+                    <a href="#" class="btn btn-outline">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle">Ready to bring your ideas to life?</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in touch</h3>
+                        <p>
+                            Whether you have a project in mind, want to collaborate, or just want to say hello, 
+                            I'd love to hear from you. Let's create something amazing together!
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <a href="mailto:assemsaid35@gmail.com" class="contact-method">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="method-info">
+                                    <span class="method-label">Email</span>
+                                    <span class="method-value">assemsaid35@gmail.com</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://linkedin.com/in/assemelqersh" class="contact-method">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M16 8A6 6 0 0 1 16 20H13V14A2 2 0 0 0 11 12H9V20H6V8H9A7 7 0 0 1 16 8Z"/>
+                                        <rect x="2" y="9" width="4" height="12"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </div>
+                                <div class="method-info">
+                                    <span class="method-label">LinkedIn</span>
+                                    <span class="method-value">Assem ElQersh</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://github.com/Assem-ElQersh" class="contact-method">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M9 19C4 20.5 4 16.5 2 16M22 16V22H18V16H22Z"/>
+                                        <path d="M16 22V18.13A3.5 3.5 0 0 0 15.07 15.4C18.5 14.99 22 13.57 22 8A5.18 5.18 0 0 0 20.65 4.04A4.65 4.65 0 0 0 20 .5S18.85.07 16 2.5A13.38 13.38 0 0 0 8 2.5C5.15.07 4 .5 4 .5A4.65 4.65 0 0 0 3.35 4.04A5.18 5.18 0 0 0 2 8C2 13.57 5.5 14.99 8.93 15.4A3.5 3.5 0 0 0 8 18.13V22"/>
+                                    </svg>
+                                </div>
+                                <div class="method-info">
+                                    <span class="method-label">GitHub</span>
+                                    <span class="method-value">Assem-ElQersh</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form class="form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary form-submit">
+                                <span>Send Message</span>
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22,2 15,22 11,13 2,9"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Assem ElQersh. Crafted with passion and precision.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Assem-ElQersh" class="social-link" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12C0 17.31 3.435 21.795 8.205 23.385C8.805 23.49 9.03 23.13 9.03 22.815C9.03 22.53 9.015 21.585 9.015 20.58C6 21.135 5.22 19.845 4.98 19.17C4.845 18.825 4.26 17.76 3.75 17.475C3.33 17.25 2.73 16.695 3.735 16.68C4.68 16.665 5.355 17.55 5.58 17.91C6.66 19.725 8.385 19.215 9.075 18.9C9.18 18.12 9.495 17.595 9.84 17.295C7.17 16.995 4.38 15.96 4.38 11.37C4.38 10.065 4.845 8.985 5.61 8.145C5.49 7.845 5.07 6.615 5.73 4.965C5.73 4.965 6.735 4.65 9.03 6.195C9.99 5.925 11.01 5.79 12.03 5.79C13.05 5.79 14.07 5.925 15.03 6.195C17.325 4.635 18.33 4.965 18.33 4.965C18.99 6.615 18.57 7.845 18.45 8.145C19.215 8.985 19.68 10.05 19.68 11.37C19.68 15.975 16.875 16.995 14.205 17.295C14.64 17.67 15.015 18.39 15.015 19.515C15.015 21.12 15 22.41 15 22.815C15 23.13 15.225 23.505 15.825 23.385C18.2072 22.5807 20.2772 21.0497 21.7437 19.0074C23.2101 16.965 23.9993 14.5143 24 12C24 5.37 18.63 0 12 0Z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/assemelqersh" class="social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166V20.452H20.447ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z"/>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/AssemElQersh" class="social-link" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25H21.552L14.325 10.51L22.827 21.75H16.17L10.956 14.933L4.99 21.75H1.68L9.41 12.915L1.254 2.25H8.08L12.793 8.481L18.244 2.25ZM17.083 19.77H18.916L7.084 4.126H5.117L17.083 19.77Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CV Download Modal -->
+    <div class="modal" id="cv-modal">
+        <div class="modal-overlay" onclick="closeCVModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeCVModal()" aria-label="Close modal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            
+            <div class="modal-header">
+                <h3>Download CV</h3>
+                <p>Choose your preferred version</p>
+            </div>
+            
+            <div class="modal-buttons">
+                <a href="Assem_ElQersh - CV - AI.pdf" download class="btn btn-primary">
+                    <span>🤖 AI/ML Engineer Version</span>
+                </a>
+                <a href="Assem_ElQersh - CV - SE.pdf" download class="btn btn-secondary">
+                    <span>💻 Software Engineer Version</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/projects.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html> 
