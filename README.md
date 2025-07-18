@@ -176,7 +176,7 @@ The portfolio is fully optimized for mobile devices:
 ## 📞 Contact & Support
 
 For questions or customizations:
-- **Email**: your.email@example.com
+- **Email**: assemsaid35@gmail.com
 - **LinkedIn**: [Assem ElQersh](https://linkedin.com/in/assemelqersh)
 - **GitHub**: [Assem-ElQersh](https://github.com/Assem-ElQersh)
 
